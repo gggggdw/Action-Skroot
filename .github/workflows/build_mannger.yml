@@ -30,6 +30,7 @@ jobs:
       - name: Build with Gradle
         run: |
           cd SKRoot-linuxKernelRoot/PermissionManager/
+          chmod 777 ./gradlew
           {
             echo 'org.gradle.parallel=true'
             echo 'org.gradle.vfs.watch=true'
