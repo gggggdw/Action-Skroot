@@ -29,7 +29,7 @@ jobs:
 
       - name: Build with Gradle
         run: |
-          cd SKRoot-linuxKernelRoot
+          cd SKRoot-linuxKernelRoot/PermissionManager/
           {
             echo 'org.gradle.parallel=true'
             echo 'org.gradle.vfs.watch=true'
