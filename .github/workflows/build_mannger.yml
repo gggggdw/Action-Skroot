@@ -6,7 +6,7 @@ on:
 jobs:
   build-manager:
     runs-on: ubuntu-latest
-    environment: signing
+    # environment: signing
     steps:
       - name: Setup need_upload
         id: need_upload
