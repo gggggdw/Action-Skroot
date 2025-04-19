@@ -31,13 +31,6 @@ jobs:
         run: |
           cd SKRoot-linuxKernelRoot/PermissionManager/
           chmod 777 ./gradlew
-          {
-            echo 'org.gradle.parallel=true'
-            echo 'org.gradle.vfs.watch=true'
-            echo 'org.gradle.jvmargs=-Xmx2048m'
-            echo 'android.native.buildOutput=verbose'
-          } >> gradle.properties
-          sed -i 's/org.gradle.configuration-cache=true//g' gradle.properties
           ./gradlew
 
       - name: Upload build artifact
